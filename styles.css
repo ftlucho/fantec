@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*----------HEADER----------*/
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: aliceblue;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 4;
+}
+.right-section{
+    color: #d5ff1a;
+    text-decoration: none;
+    margin-right: 10%;
+    display:flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+h1{
+    color: #d5ff1a;
+    font-family: "Be Vietnam Pro";
+    font-size: 50px;
+    margin-left: 8%;
+}
+a{
+    color: #d5ff1a;
+    text-decoration: none;
+    font-family: "Be Vietnam Pro";
+}
+.contact, .social-media{
+    
+}
+
+/*----------SLOGAN-SECTION----------*/
+
+.slogan{
+    color:white;
+    font-family: 'Be Vietnam Pro';
+    font-weight: 300;
+    font-size: 40px;
+    display:flex;
+    text-align: center;
+    justify-content: center;
+}
+.slogan-section{
+    margin-top: 420px;
+    margin-bottom: 500px;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+.price-button, .contact-button{
+    box-shadow:inset 0px -2px 15px 3px #d5ff1a;
+	background:linear-gradient(to bottom, #c7ee17 5%, #a0c012 100%);
+	background-color:#d5ff1a;
+	border-radius:6px;
+	border:1px solid #353535;
+	display:inline-block;
+	cursor:pointer;
+	color:#353535;
+	font-family: 'Be Vietnam Pro', sans-serif;
+	font-size:16px;
+	padding:10px 33px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px ;
+}
+.contact-button:hover{
+    background:linear-gradient(to bottom, #d5ff1a 5%, #d5ff1a 100%);
+	background-color:#d5ff1a;
+}
+.contact-button:active{
+    position:relative;
+	top:1px;
+}
+.price-button:hover{
+    background:linear-gradient(to bottom, #d5ff1a 5%, #d5ff1a 100%);
+	background-color:#d5ff1a;
+}
+.price-button:active{
+    position:relative;
+	top:1px;
+}
+
+/*----------MAIN-SECTION----------*/
+
+.description{
+    width: 100%;
+    font-family: "Be Vietnam Pro";
+    text-align: center;
+    color: #fbfbfb;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    margin: 10% 60% 10% 10%;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 3;
+}
+
+body{
+    background-image: url(marmol-negro.jpg);
+}
+
+.about-us{
+    display: flex;
+    justify-content:end;
+    background-image: url(dimitris-chapsoulas-bHpOqVl6Fnw-unsplash.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    max-width: 2000px;
+    
+}
+
+/*----------PRODUCTS----------*/
+
+.products{
+    display:flex;
+    gap: 30px;
+    color:aliceblue;
+    font-family: "Be Vietnam Pro";
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px;
+    flex-wrap: wrap;
+    
+}
+.razer, .airpods, .apple, .xbox, .sony, .logitech{
+    backdrop-filter: blur(25px);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+h3{
+    font-weight: 100;
+}
+h3:hover{
+    color:rgb(194, 194, 194);
+}
+.product-title{
+    color:white;
+    font-family: "Be Vietnam Pro";
+    font-weight: 200;
+    margin: 60px;
+    letter-spacing: 8px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+
+/*----------FOOTER----------*/
+
+footer{
+    
+    background-color: black;
+    padding: 50px 
+}
+h5{
+    color:white;
+    display: flex;
+    justify-content: center;
+    font-family: "Be Vietnam Pro";
+    font-weight: 200;
+}
+
+/*----------RESPONSIVE-SECTION----------*/
+
+@media only screen and (max-width: 880px){
+    .description{
+        margin: 10% 40% 10% 10%;
+        
+    }
+}
+@media only screen and (max-width: 680px){
+    .description{
+        margin: 10% 20% 10% 10%;
+    }    
+
+}
+@media only screen and (max-width: 496px){
+    .right-section{
+        margin-left: 37px;
+    }
+}
+@media only screen and (max-width: 477px){
+    .description{
+        margin: 0;
+        text-align: center;
+        
+    }
+    .slogan{
+        font-size: 20px;
+    }
+}
